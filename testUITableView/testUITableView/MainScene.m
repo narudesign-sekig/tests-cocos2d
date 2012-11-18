@@ -39,7 +39,7 @@
         [self addChild:label];
         
         CCMenuItem *itemMenu = [CCMenuItemFont itemWithString:@"go Title" block:^(id sender) {
-            [table setContentOffset:table.contentOffset animated:NO];   // stop scrolling
+            [table setContentOffset:table.contentOffset animated:NO];
             [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene:[TitleScene scene]]];
         }];
         CCMenu *menu = [CCMenu menuWithItems:itemMenu, nil];
